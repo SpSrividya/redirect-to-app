@@ -6,4 +6,21 @@
     <body>
         <h1>This page wase built to redirect to app</h1>
     </body>
+
+    <script>
+        (function() {
+  var app = {
+    launchApp: function() {
+      window.location.replace("auto2000://path/");
+      this.timer = setTimeout(this.openWebApp, 1000);
+    },
+
+    openWebApp: function() {
+      window.location.replace("https://sit.auto2000.co.id/auto2000/en");
+    }
+  };
+
+  app.launchApp();
+})();
+    </script>
 </html>
